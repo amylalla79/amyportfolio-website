@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills — Amy Lalla</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="Technical skills and proficiencies of Amy Lalla." />
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="./index.html">Amy Lalla</a>
+      <button id="nav-toggle" class="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html" aria-current="page">Skills</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-card" aria-labelledby="skills-title">
+      <h1 id="skills-title">Skills</h1>
+      <p>Here are the tools and technologies I work with or am learning.</p>
+    </section>
+
+    <section class="grid cols-3" aria-labelledby="categories-title">
+      <h2 id="categories-title" class="sr-only">Skill Categories</h2>
+      <div class="section-card">
+        <h3>Front‑End</h3>
+        <ul>
+          <li>HTML5, Semantic Markup</li>
+          <li>CSS3, Responsive Design, Flexbox & Grid</li>
+          <li>JavaScript (ES6+)</li>
+        </ul>
+      </div>
+      <div class="section-card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>VS Code / Cursor</li>
+          <li>Chrome DevTools</li>
+        </ul>
+      </div>
+      <div class="section-card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Communication</li>
+          <li>Collaboration</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Amy Lalla</div>
+  </footer>
+  <script src="./script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+

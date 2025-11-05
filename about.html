@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Amy Lalla</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="./index.html">Amy Lalla</a>
+      <button id="nav-toggle" class="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html" aria-current="page">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-card" aria-labelledby="about-title">
+      <h1 id="about-title">About Me</h1>
+      <p>
+        I'm pursuing a Bachelor of Science in Software Engineering Technology. I love learning by building,
+        and I'm especially interested in crafting thoughtful user experiences and reliable, maintainable code.
+      </p>
+    </section>
+
+    <section class="grid cols-2" aria-labelledby="details-title">
+      <div class="section-card">
+        <h2 id="details-title">Background & Education</h2>
+        <ul>
+          <li>Software Engineering Technology major (B.S.).</li>
+          <li>Coursework includes web development, data structures, and software design.</li>
+          <li>Hands‑on projects focusing on front‑end and user experience.</li>
+        </ul>
+      </div>
+      <div class="section-card">
+        <h2>Interests</h2>
+        <ul>
+          <li>UI/UX exploration and design systems</li>
+          <li>Learning new JavaScript frameworks</li>
+          <li>Casual photography and visual storytelling</li>
+          <li>Cooking experiments and discovering new food spots</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Amy Lalla</div>
+  </footer>
+  <script src="./script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+

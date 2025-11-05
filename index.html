@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amy Lalla — Portfolio</title>
+  <meta name="description" content="Portfolio website of Amy Lalla." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="./index.html">Amy Lalla</a>
+      <button id="nav-toggle" class="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-card" aria-labelledby="intro-title">
+      <h1 id="intro-title">Hi, I'm Amy Lalla</h1>
+      <p>
+        I'm an aspiring software engineer currently studying Software Engineering Technology.
+        I enjoy building clean, user-friendly experiences on the web, exploring new tools,
+        and turning ideas into working projects. When I'm not coding, you'll probably find me
+        trying out a new recipe, sketching UI ideas, or messing with a new gadget.
+      </p>
+      <div class="spacer"></div>
+      <a class="btn" href="./projects.html">View my projects</a>
+    </section>
+
+    <section aria-labelledby="featured-title">
+      <h2 id="featured-title">Featured Highlights</h2>
+      <div class="grid cols-3">
+        <article class="card" aria-labelledby="highlight-1-title">
+          <img src="https://via.placeholder.com/800x400?text=Clean+UI" alt="Clean user interface example" />
+          <div class="card-body">
+            <h3 id="highlight-1-title">Clean, Accessible UI</h3>
+            <p>Semantic HTML, strong color contrast, and keyboard-friendly interactions.</p>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="highlight-2-title">
+          <img src="https://via.placeholder.com/800x400?text=Responsive+Design" alt="Responsive design preview on multiple devices" />
+          <div class="card-body">
+            <h3 id="highlight-2-title">Responsive by Default</h3>
+            <p>Layouts adapt smoothly to phones, tablets, and laptops using CSS Grid and media queries.</p>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="highlight-3-title">
+          <img src="https://via.placeholder.com/800x400?text=Interactive+JS" alt="Interactive JavaScript features" />
+          <div class="card-body">
+            <h3 id="highlight-3-title">Interactive Experiences</h3>
+            <p>From mobile menus to carousels and forms, JavaScript enhances UX without getting in the way.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Amy Lalla</div>
+  </footer>
+  <script src="./script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  </body>
+  </html>
+
+

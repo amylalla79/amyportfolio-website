@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Amy Lalla</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="./index.html">Amy Lalla</a>
+      <button id="nav-toggle" class="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-card" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projects</h1>
+      <p>A few sample projects showcasing front‑end UI, logic, and interactivity.</p>
+    </section>
+
+    <section aria-labelledby="carousel-title">
+      <h2 id="carousel-title">Showcase Carousel</h2>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track" data-carousel-track>
+          <div class="carousel-slide">
+            <img src="https://via.placeholder.com/1200x500?text=Weather+App" alt="Screenshot of the Weather App" />
+          </div>
+          <div class="carousel-slide">
+            <img src="https://via.placeholder.com/1200x500?text=Calculator" alt="Screenshot of the Calculator App" />
+          </div>
+          <div class="carousel-slide">
+            <img src="https://via.placeholder.com/1200x500?text=Clothing+Store" alt="Screenshot of the Clothing Website" />
+          </div>
+        </div>
+        <div class="carousel-controls" aria-hidden="true">
+          <button class="carousel-btn" data-carousel-prev aria-label="Previous slide">◀</button>
+          <button class="carousel-btn" data-carousel-next aria-label="Next slide">▶</button>
+        </div>
+        <div class="carousel-dots" data-carousel-dots aria-label="Slide dots"></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="grid-title">
+      <h2 id="grid-title">Project Details</h2>
+      <div class="grid cols-3">
+        <article class="card" aria-labelledby="p1-title">
+          <img src="https://via.placeholder.com/800x400?text=Weather+App" alt="Weather app forecast view" />
+          <div class="card-body">
+            <h3 id="p1-title">Weather App</h3>
+            <p>
+              A simple weather dashboard that shows current conditions and a 5‑day forecast.
+              Built with semantic HTML, responsive CSS, and fetches data from a public API.
+            </p>
+            <a class="btn" href="#" aria-disabled="true">Live (coming soon)</a>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="p2-title">
+          <img src="https://via.placeholder.com/800x400?text=Calculator" alt="Calculator interface" />
+          <div class="card-body">
+            <h3 id="p2-title">Calculator</h3>
+            <p>
+              A functional calculator supporting basic operations with keyboard input support and clear
+              visual feedback for pressed keys.
+            </p>
+            <a class="btn" href="#" aria-disabled="true">Code (coming soon)</a>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="p3-title">
+          <img src="https://via.placeholder.com/800x400?text=Clothing+Store" alt="Clothing storefront product grid" />
+          <div class="card-body">
+            <h3 id="p3-title">Clothing Website</h3>
+            <p>
+              A mock storefront featuring a responsive product grid, simple filters, and a modern
+              theme. Focused on layout and UI polish.
+            </p>
+            <a class="btn" href="#" aria-disabled="true">Preview (coming soon)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Amy Lalla</div>
+  </footer>
+  <script src="./script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
